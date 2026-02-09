@@ -1,3 +1,39 @@
 export const Hero = () => {
-  return <div></div>
-}
+  return (
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      <div className="absolute inset-0">
+        <img
+          src="/back-ground.jpg"
+          alt=""
+          className="w-full h-full object-cover opacity-100"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to background" />
+      </div>
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(40)].map(() => (
+          <div
+            className="absolute w-1.5 h-1.5 rounded-full opacity-60"
+            style={{
+              backgroundColor: "#7bff08",
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
+              animationDelay: `${Math.random() * 5}s`,
+            }}
+          />
+        ))}
+      </div>
+      <div>
+        <div>
+          <div>
+            <div className="animate-fade-in">
+              <span className="w-2 h-2 bg-primary rounded-full ">
+                Web Developer
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
