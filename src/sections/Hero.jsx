@@ -23,13 +23,28 @@ export const Hero = () => {
           />
         ))}
       </div>
-      <div>
-        <div>
-          <div>
+      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-2 items-center">
+          <div className="space-y-8">
             <div className="animate-fade-in">
-              <span className="w-2 h-2 bg-primary rounded-full ">
-                Web Developer
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
+                <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                Web Developer - React Specialist
               </span>
+            </div>
+            <div className="space-y-4">
+              <h1 className="text-5xl md:text-5xl lg:text-7xl font-bold leading-tight animate-fade-in">
+                Crafting <span className="text-primary glow-text">digital</span>
+                <br />
+                experiences with
+                <br />
+                <span className="font-serif italic font-normal text-white">
+                  Precision.
+                </span>
+              </h1>
+              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in">
+                Web Developer specializing in HTML, CSS, JavaScript, React.js, Git/GitHub, and Next.js. I build scalable, high-performance web applications with a focus on user experience and modern development practices.
+              </p>
             </div>
           </div>
         </div>
