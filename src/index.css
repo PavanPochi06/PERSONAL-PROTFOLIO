@@ -112,6 +112,10 @@
     animation: float 4s ease-in-out infinite;
   }
 
+  .animate-marquee{
+    animation: marquee 30s linear infinite;
+  }
+
   .animation-delay-100{
     animation-delay: 100ms;
   }
@@ -146,6 +150,15 @@
     }
     100%{
       stroke-dashoffset: -550; 
+    }
+  }
+
+  @keyframes marquee {
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(-50%);
     }
   }
 
